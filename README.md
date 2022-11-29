@@ -33,4 +33,4 @@ produktet brutt.
 
 Problemet med å ikke gi ut ny funksjonalitet for større kontroll/kvalitetsikring kan være at man
 overdriver optimaliseringen. Dette fører til lang ventetid på oppgaver som burde vært fullført, og unødvendig bruk av tid og ressurser,
-eller såkalt "waste". 
+eller såkalt "waste". En DevOps-løsning kan være "single piece flow"
