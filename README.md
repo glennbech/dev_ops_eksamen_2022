@@ -24,3 +24,7 @@ Det fratar hele DevOps-tankegangen og gjør det til et anti-prosjekt. De som ska
 sannsynlig mer kunnskap om hvordan arbeidet skal utføres enn noen utenforstående.
 Da er vi tilbake igjen på å gi fra seg ansvar og man mister "skin in the game", derfor er dette en viktig del av DevOps.
 
+Oppsummert sett vil de nevnte utfordringene fra eldre systemutvikling være dårligere sluttprodukt, vanskeligere å 
+opprettholde, treigere utvikling og generelt høyere frustrasjon i de isolerte gruppene.
+Altså blir DevOps-prinsipper som samarbeid, kontinuerlig utvikling, kontinuerlig forbedring, automatisering, læring av å feile og ansvar for
+produktet brutt.
