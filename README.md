@@ -1,7 +1,6 @@
 # DevOps 2022
 
 ## Oppgave 1:
-
 En av de kulturelle grunnene til at dagens systemutvikling har utfordringer er ansvarsfraskrivelse, eller assymetri i
 kunnskap i de forskjellige "gruppene"/avdelingene. Med ansvarsfraskrivelse så snakker jeg om ordtaket "skin in the game".
 
