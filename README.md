@@ -2,8 +2,6 @@
 
 ## Oppgave 1:
 
-1. 
-
 En av de kulturelle grunnene til at dagens systemutvikling har utfordringer er ansvarsfraskrivelse, eller assymetri i
 kunnskap i de forskjellige "gruppene"/avdelingene. Med ansvarsfraskrivelse så snakker jeg om ordtaket "skin in the game".
 
@@ -29,15 +27,16 @@ opprettholde, treigere utvikling og generelt høyere frustrasjon i de isolerte g
 Altså blir DevOps-prinsipper som samarbeid, kontinuerlig utvikling, kontinuerlig forbedring, automatisering, læring av å feile og ansvar for
 produktet brutt.
 
-2. 
-
 Problemet med å ikke gi ut ny funksjonalitet for større kontroll/kvalitetsikring kan være at man
 overdriver optimaliseringen. Dette fører til lang ventetid på oppgaver som burde vært fullført, og unødvendig bruk av tid og ressurser,
 eller såkalt "waste". I DevOps vil man ha minst mulig "waste" og mest mulig "flow". 
 
 Med lavere hyppighet på levering så vil det føre til en stor levering, eller en "batch", noe som åpenbart fører til store flaskehalser i produksjonen.
-En av løsningene kan være å begrense oppgavestørrelsene for å oppnå bedre flyt. Man kan også innføre en "one piece flow" som tilsier at man har en grense på hvor
-mye arbeid som gjøres samtidig, og er det noe som feiler eller ikke fungerer som tiltenkt, skal alle gå inn for å løse problemet. 
+Teamet kan miste fokus ved å måtte bytte oppgaver ofte, ikke fullføre det man startet på og man får lite tilbakemelding under produksjon.
+En av løsningene kan være å begrense oppgavestørrelsene for å oppnå bedre flyt. En god DevOps-løsning er små team på mindre feature-branches som leverer hyppige commits og kjører pull-request og automatiserte bygg til en felles main-branch.
+Man kan også innføre en "one piece flow" som tilsier at man har en grense på hvor
+mye arbeid som gjøres samtidig (WIP), og er det noe som feiler eller ikke fungerer som tiltenkt, skal alle gå inn for å løse problemet. 
 Dette er ikke en enkel ting å innføre, men har store fordeler om det fungerer som det skal.
 
-En god DevOps-løsning er små team på mindre feature-branches som leverer hyppige commits og kjører pull-request og automatiserte bygg til en felles main-branch.
+Innføring av hyppige release må komme med gode automatiserte tester og jobber for at systemet skal fungere. Er det ikke god nok infrastruktur vil dette igjen stjele tid
+og skape dårlig flyt, som da bryter med DevOps-tankegang.
