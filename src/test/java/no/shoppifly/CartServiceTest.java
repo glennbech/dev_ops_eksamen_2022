@@ -8,7 +8,6 @@ public class CartServiceTest {
 
     @Test
     public void shouldRemoveCartAfterCheckout() {
-
         CartService service = new NaiveCartImpl();
         Cart theCart = Cart.builder().build();
         service.update(theCart);
