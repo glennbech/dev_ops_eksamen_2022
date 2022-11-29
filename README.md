@@ -28,3 +28,9 @@ Oppsummert sett vil de nevnte utfordringene fra eldre systemutvikling være dår
 opprettholde, treigere utvikling og generelt høyere frustrasjon i de isolerte gruppene.
 Altså blir DevOps-prinsipper som samarbeid, kontinuerlig utvikling, kontinuerlig forbedring, automatisering, læring av å feile og ansvar for
 produktet brutt.
+
+2. 
+
+Problemet med å ikke gi ut ny funksjonalitet for større kontroll/kvalitetsikring kan være at man
+overdriver optimaliseringen. Dette fører til lang ventetid på oppgaver som burde vært fullført, og unødvendig bruk av tid og ressurser,
+eller såkalt "waste". 
