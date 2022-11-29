@@ -40,6 +40,10 @@ Dette er ikke en enkel ting å innføre, men har store fordeler om det fungerer 
 Innføring av hyppige release må komme med gode automatiserte tester og jobber for at systemet skal fungere. Er det ikke god nok infrastruktur vil dette igjen stjele tid
 og skape dårlig flyt, som da bryter med DevOps-tankegang.
 
-## Oppgave 3:
+## Del 1
+
+Oppgave 3:
+
+
 
 
