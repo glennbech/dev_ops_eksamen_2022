@@ -44,6 +44,14 @@ og skape dårlig flyt, som da bryter med DevOps-tankegang.
 
 Oppgave 3:
 
+For å løse oppgave 3 må sensor:
 
+- Gå inn på settings i sin fork -> branches
+- Under Branch protection rules trykk "Add rule"
+- Velg branch name pattern "master"
+- Sjekk av på "Require a pull request before merging" og "Require approvals" (minst en godkjenning)
+- Sjekk av på "Require status checks to pass before merging" -> i søkefeltet skriv "build" (Github Actions)
+
+(Ekstra: sjekk av "Do not allow bypassing the above settings")
 
 
