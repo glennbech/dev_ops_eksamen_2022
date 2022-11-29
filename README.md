@@ -33,4 +33,11 @@ produktet brutt.
 
 Problemet med å ikke gi ut ny funksjonalitet for større kontroll/kvalitetsikring kan være at man
 overdriver optimaliseringen. Dette fører til lang ventetid på oppgaver som burde vært fullført, og unødvendig bruk av tid og ressurser,
-eller såkalt "waste". En DevOps-løsning kan være "single piece flow"
+eller såkalt "waste". I DevOps vil man ha minst mulig "waste" og mest mulig "flow". 
+
+Med lavere hyppighet på levering så vil det føre til en stor levering, eller en "batch", noe som åpenbart fører til store flaskehalser i produksjonen.
+En av løsningene kan være å begrense oppgavestørrelsene for å oppnå bedre flyt. Man kan også innføre en "one piece flow" som tilsier at man har en grense på hvor
+mye arbeid som gjøres samtidig, og er det noe som feiler eller ikke fungerer som tiltenkt, skal alle gå inn for å løse problemet. 
+Dette er ikke en enkel ting å innføre, men har store fordeler om det fungerer som det skal.
+
+En god DevOps-løsning er små team på mindre feature-branches som leverer hyppige commits og kjører pull-request og automatiserte bygg til en felles main-branch.
