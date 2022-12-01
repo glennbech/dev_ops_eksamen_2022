@@ -1,5 +1,5 @@
-no/shoppifly/CartService.class
 no/shoppifly/NaiveCartImpl.class
+no/shoppifly/CartService.class
 no/shoppifly/Cart$CartBuilder.class
 no/shoppifly/Cart.class
 no/shoppifly/Item.class
