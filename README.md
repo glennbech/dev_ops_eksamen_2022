@@ -81,10 +81,10 @@ Du trenger også et ECR repository. I AWS søk opp 'ECR' og velg Amazon Elastic 
 Når du har laget et repo, må du endre workflow filen (docker.yml) til å inneholde navnet på ditt reposity, istedenfor mitt (altså bytt ut 1036 med ditt unike navn):
 
 Her:
-docker tag shopifly 244530008913.dkr.ecr.eu-west-1.amazonaws.com/1036
+docker tag shopifly 244530008913.dkr.ecr.eu-west-1.amazonaws.com/1036:$rev
 
 Her:
-docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/1036
+docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/1036:$rev
 
 Push de nye endringene til github og se at imaget har blitt lastet opp til ECR/workflow er OK
 
