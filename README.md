@@ -70,3 +70,21 @@ I Dockerfile så endret jeg hvertfall versjonen av java, og la til en multi-stag
 Sjekker om det fungerer og kjører docker run -p 8080:8080 eksamencada003/shopifly (Port-mapping til 8080)
 og curl localhost:8080/carts -> får tilbake en tom "handlevogn". Checks out.
 
+Oppgave 3:
+
+Jeg har nå endret docker.yml filen fra å bygge og pushe til docker hub til å gjøre det samme mot AWS ECR.
+Sensor må gå inn på sitt aws/aws terminal og lage en access key for å "logge inn" med github-actions, akkurat som for å logge inn på docker hub.
+I søkefeltet skriv inn 'IAM' og velg 'users'/brukere -> finn din egen bruker og trykk på 'security credentials'. Her skal du lage din access key som du skal bruke i github secrets. 
+Deretter gå inn på github, slik som i docker hub setupet - settings -> secrets -> actions og new repo secret. Legg til AWS_ACCESS_KEY_ID og AWS_ACCESS_KEY. Verdiene her er de du nettopp lagde i AWS.
+
+Du trenger også et ECR repository. I AWS søk opp 'ECR' og velg Amazon Elastic Container Registry. Velg riktig område og trykk create repository med ditt unike navn.
+Når du har laget et repo, må du endre workflow filen (docker.yml) til å inneholde navnet på ditt reposity, istedenfor mitt (altså bytt ut 1036 med ditt unike navn):
+
+Her:
+docker tag shopifly 244530008913.dkr.ecr.eu-west-1.amazonaws.com/1036
+
+Her:
+docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/1036
+
+Push de nye endringene til github og se at imaget har blitt lastet opp til ECR/workflow er OK
+
