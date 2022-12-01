@@ -63,4 +63,10 @@ Deretter så jeg at workflowen vil ha tilgang til to 'secrets' ved navn av DOCKE
 Inne i mitt repo på GitHub gikk jeg til settings -> secrets -> actions. Så trykket jeg på 'new repository secret' og la til
 mitt brukernavn og mitt token under de to tagsene. Endret dette README.md for å pushe på nytt og sjekke om det fungerte.
 
+Det gikk, litt usikker på om det var en annen grunn til at workflowen feilet, fordi jeg fikset Dockerfile FØR jeg fikset workflowen.
+I Dockerfile så endret jeg hvertfall versjonen av java, og la til en multi-stage-build. Endret også COPY til builder, sånn at man slipper
+å bygge en target-mappe/JAR manuelt først.
+
+Sjekker om det fungerer og kjører docker run -p 8080:8080 eksamencada003/shopifly (Port-mapping til 8080)
+og curl localhost:8080/carts -> får tilbake en tom "handlevogn". Checks out.
 
