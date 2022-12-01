@@ -40,7 +40,7 @@ Dette er ikke en enkel ting å innføre, men har store fordeler om det fungerer 
 Innføring av hyppige release må komme med gode automatiserte tester og jobber for at systemet skal fungere. Er det ikke god nok infrastruktur vil dette igjen stjele tid
 og skape dårlig flyt, som da bryter med DevOps-tankegang.
 
-## Del 1
+## Del 2
 
 Oppgave 3:
 
@@ -53,5 +53,14 @@ For å løse oppgave 3 må sensor:
 - Sjekk av på "Require status checks to pass before merging" -> i søkefeltet skriv "build" (Github Actions)
 
 (Ekstra: sjekk av "Do not allow bypassing the above settings")
+
+## Del 3
+
+Oppgave 1:
+
+Først og fremst måtte jeg endre branch fra navnet 'main' -> 'master' for å få den til å kjøre når jeg pusher.
+Deretter så jeg at workflowen vil ha tilgang til to 'secrets' ved navn av DOCKER_HUB_USERNAME og DOCKER_HUB_TOKEN.
+Inne i mitt repo på GitHub gikk jeg til settings -> secrets -> actions. Så trykket jeg på 'new repository secret' og la til
+mitt brukernavn og mitt token under de to tagsene. Endret dette README.md for å pushe på nytt og sjekke om det fungerte.
 
 
