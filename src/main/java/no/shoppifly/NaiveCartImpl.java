@@ -34,6 +34,10 @@ class NaiveCartImpl implements CartService {
         return new ArrayList<>(shoppingCarts.keySet());
     }
 
+    public Integer getAllCarts() { return shoppingCarts.size(); }
+
+    public Float getTotal() { return total(); }
+
     // @author Jim; I'm so proud of this one, took me one week to figure out !!!
     public float total() {
         return shoppingCarts.values().stream()

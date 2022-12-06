@@ -77,8 +77,8 @@ Sensor må gå inn på sitt aws/aws terminal og lage en access key for å "logge
 I søkefeltet skriv inn 'IAM' og velg 'users'/brukere -> finn din egen bruker og trykk på 'security credentials'. Her skal du lage din access key som du skal bruke i github secrets. 
 Deretter gå inn på github, slik som i docker hub setupet - settings -> secrets -> actions og new repo secret. Legg til AWS_ACCESS_KEY_ID og AWS_ACCESS_KEY. Verdiene her er de du nettopp lagde i AWS.
 
-Du trenger også et ECR repository. I AWS søk opp 'ECR' og velg Amazon Elastic Container Registry. Velg riktig område og trykk create repository med ditt unike navn.
-Når du har laget et repo, må du endre workflow filen (docker.yml) til å inneholde navnet på ditt reposity, istedenfor mitt (altså bytt ut 1036 med ditt unike navn):
+Du trenger også et ECR repository. I AWS søk opp 'ECR' og velg Amazon Elastic Container Registry. Velg riktig område (eu-west-1?) og trykk create repository med ditt unike navn.
+Når du har laget et repo, må du endre workflow filen (docker.yml) til å inneholde navnet på ditt repository, istedenfor mitt (altså bytt ut 1036 med ditt unike navn):
 
 Her:
 docker tag shopifly 244530008913.dkr.ecr.eu-west-1.amazonaws.com/1036:$rev
