@@ -4,6 +4,7 @@ import io.micrometer.core.annotation.Timed;
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.Gauge;
 import io.micrometer.core.instrument.MeterRegistry;
+import io.micrometer.core.instrument.Timer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
@@ -15,7 +16,7 @@ public class ShoppingCartController implements ApplicationListener<ApplicationRe
     private final MeterRegistry meterRegistry;
     private final CartService cartService;
 
-    Counter counter;
+    private final Counter counter;
 
     @Autowired
     public ShoppingCartController(MeterRegistry meterRegistry, CartService cartService) {
@@ -35,7 +36,7 @@ public class ShoppingCartController implements ApplicationListener<ApplicationRe
      * @return an order ID
      */
     @PostMapping(path = "/cart/checkout")
-    @Timed
+    @Timed(value = "checkout_latency")
     public String checkout(@RequestBody Cart cart) {
        counter.increment();
        return cartService.checkout(cart);
