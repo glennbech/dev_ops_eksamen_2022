@@ -38,7 +38,7 @@ public class ShoppingCartController implements ApplicationListener<ApplicationRe
     @Timed
     public String checkout(@RequestBody Cart cart) {
        counter.increment();
-        return cartService.checkout(cart);
+       return cartService.checkout(cart);
     }
 
     /**
