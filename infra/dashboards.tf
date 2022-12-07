@@ -1,7 +1,7 @@
 resource "aws_cloudwatch_dashboard" "main" {
   dashboard_name = var.candidate_id
 ## Jim; seriously! we can use any word here.. How cool is that?
-  dashboard_body = <<DEATHSTAR
+  dashboard_body = <<DASHBOARD
 {
   "widgets": [
     {
@@ -14,16 +14,16 @@ resource "aws_cloudwatch_dashboard" "main" {
         "metrics": [
           [
             "${var.candidate_id}",
-            "account_count.value"
+            "carts.value"
           ]
         ],
         "period": 300,
         "stat": "Maximum",
         "region": "eu-west-1",
-        "title": "Total number of accounts"
+        "title": "Total number of carts"
       }
     }
   ]
 }
-DEATHSTAR
+DASHBOARD
 }
