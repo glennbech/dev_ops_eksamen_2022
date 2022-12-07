@@ -95,6 +95,6 @@ Oppgave 1:
 
 For at terraform-koden skal kunne "prate" med den/de valgte tjenestene, bruker den noe som heter en state-fil.
 Uten en kodeimplementasjon av hva slags backend man skal bruke, så lagrer den filen lokalt på maskinen. I provider.tf
-var det ingen backend-kode for å lagre denne state-filen.
+var det ingen backend-kode for å lagre denne state-filen. Så den prøver å lage en bucket i backend.
 
 
