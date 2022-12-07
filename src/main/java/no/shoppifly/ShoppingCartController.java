@@ -27,6 +27,7 @@ public class ShoppingCartController implements ApplicationListener<ApplicationRe
     public Cart getCart(@PathVariable String id) {
         return cartService.getCart(id);
     }
+
     /**
      * Checks out a shopping cart. Removes the cart, and returns an order ID
      *
