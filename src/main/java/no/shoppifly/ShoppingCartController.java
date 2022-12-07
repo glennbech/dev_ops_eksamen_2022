@@ -63,13 +63,11 @@ public class ShoppingCartController implements ApplicationListener<ApplicationRe
 
     @GetMapping(path = "/total")
     public float getTotal() {
-        System.out.println(cartService.getTotal());
         return cartService.getTotal();
     }
 
     @GetMapping(path = "/carts/total")
     public Integer getCartsTotal() {
-        System.out.println(cartService.getAllCarts());
         return cartService.getAllCarts();
     }
 
