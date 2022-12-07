@@ -78,7 +78,8 @@ I søkefeltet skriv inn 'IAM' og velg 'users'/brukere -> finn din egen bruker og
 Deretter gå inn på github, slik som i docker hub setupet - settings -> secrets -> actions og new repo secret. Legg til AWS_ACCESS_KEY_ID og AWS_ACCESS_KEY. Verdiene her er de du nettopp lagde i AWS.
 
 Du trenger også et ECR repository. I AWS søk opp 'ECR' og velg Amazon Elastic Container Registry. Velg riktig område (eu-west-1?) og trykk create repository med ditt unike navn.
-Når du har laget et repo, må du endre workflow filen (docker.yml) til å inneholde navnet på ditt repository, istedenfor mitt (altså bytt ut 1036 med ditt unike navn):
+Når du har laget et repo, må du endre workflow filen (docker.yml) til å inneholde navnet på ditt repository, istedenfor mitt (altså bytt ut 1036 med ditt unike navn og 244530008913 med din bruker):
+
 
 Her:
 docker tag shopifly 244530008913.dkr.ecr.eu-west-1.amazonaws.com/1036:$rev
@@ -87,4 +88,13 @@ Her:
 docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/1036:$rev
 
 Push de nye endringene til github og se at imaget har blitt lastet opp til ECR/workflow er OK
+
+# DEL 5:
+
+Oppgave 1:
+
+For at terraform-koden skal kunne "prate" med den/de valgte tjenestene, bruker den noe som heter en state-fil.
+Uten en kodeimplementasjon av hva slags backend man skal bruke, så lagrer den filen lokalt på maskinen. I provider.tf
+var det ingen backend-kode for å lagre denne state-filen.
+
 
