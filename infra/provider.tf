@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "s3" {
-      bucket = "analyticsbucket"
-      key    = "1036-data-analytics"
-      region = "us-west-1"
+      bucket = "pgr301-2021-terraform-state"
+      key    = "1036/data-analytics.state"
+      region = "eu-north-1"
     }
 }
